@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/shikharDB")
+mongoose.connect("mongodb://localhost:27017/ShikharDB")
 const todoSchema = new mongoose.Schema({
     title: String,
     description: String,
@@ -7,5 +7,5 @@ const todoSchema = new mongoose.Schema({
 })
 const todo = mongoose.model("Todo", todoSchema);
 module.exports = {
-    todo
+    todo,
 }
